@@ -1,0 +1,5 @@
+penguins_processed %>% 
+  group_by(sex) %>% 
+  drop_na() %>% 
+  summarize(mean_body_mass = mean(body_mass_g))
+  
